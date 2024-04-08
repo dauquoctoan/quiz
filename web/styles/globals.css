@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes closePopUp {
+    from {
+        opacity: 1;
+        scale: 1;
+    }
+    to {
+        opacity: 0;
+        scale: 0.8;
+    }
+}
+
+@keyframes closeOverlay {
+    from {
+        background-color: var(--color-modal-overlay);
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+body {
+    height: 100vh;
+}
+
+/* custome scroll */
+*::-webkit-scrollbar-track {
+    background-color: var(--color-light-theme-secondary);
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-light-theme-secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8b7979;
+    border-radius: 5px;
+}
+/* disable */
+.no-scrool::-webkit-scrollbar-track {
+    display: none;
+}
+
+.no-scrool::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrool::-webkit-scrollbar-thumb {
+    display: none;
+}
+/* scroll hover */
+.hover-scroll::-webkit-scrollbar-track:not(:hover) {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.hover-scroll::-webkit-scrollbar:not(:hover) {
+    width: 6px;
+    background-color: transparent;
+}
+.hover-scroll::-webkit-scrollbar-thumb:not(:hover) {
+    background-color: transparent;
+    border-radius: 5px;
+}
+/* Tip tap */
+.ProseMirror-focused {
+    outline: none;
+}
+
+.ProseMirror {
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.ProseMirror .is-empty:before,
+.ProseMirror p.is-editor-empty:first-child:before {
+    content: attr(data-placeholder);
+    float: left;
+    pointer-events: none;
+    height: 0;
+    opacity: 1;
+    color: #9ca3af;
+}
+
+.table-shadow-left::after {
+    box-shadow: var(--table-shadow-left-primary);
+}
+
+.table-shadow-right::after {
+    box-shadow: var(--table-shadow-right-primary);
+}
+
+/* dnd */
+
+.sortable-chosen {
+    box-shadow: var(--table-shadow-right-primary);
+}
+
+.draggableItem:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+/* cylce progess */
+.card {
+    display: flex;
+    align-items: center;
+    /* width: 10px;
+    height: 10px; */
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.2);
+}
+
+.card .percent {
+    position: relative;
+}
+
+.card svg {
+    position: relative;
+    width: 110px;
+    height: 110px;
+    transform: rotate(-90deg);
+}
+
+.card svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.card svg circle:last-of-type {
+    stroke-dasharray: 125px;
+    stroke-dashoffset: calc(125px - (125px * var(--percent)) / 100);
+    stroke: #3498db;
+}
+
+.card .number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card .number h3 {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.card .number h3 span {
+    font-size: 13px;
+}
+
+.card .title h2 {
+    margin: 10px 0 0;
+}
+
+.card:nth-child(1) svg circle:last-of-type {
+    stroke: #f39c12;
+}
+
+/* body issue */
+
+.h-max-body {
+    height: calc(100vh - 60px);
+}

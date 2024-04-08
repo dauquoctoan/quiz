@@ -1,0 +1,88 @@
+.theme-dark {
+    --color-theme-primary: var(--color-dark-theme-primary);
+    --color-theme-color-primary: var(--color-dark-theme-color-primary);
+}
+
+.theme-light {
+    /* background */
+    --color-theme-primary: var(--color-light-theme-primary);
+    --color-theme-secondary: var(--color-light-theme-secondary);
+    /* text */
+    --color-theme-text-primary: var(--color-light-theme-text-primary);
+    /* border */
+    --color-theme-border-primary: var(--color-light-theme-border-primary);
+    --color-theme-border-secondary: var(--color-light-theme-border-secondary);
+    --color-theme-border-highligh: var(--color-light-theme-border-highligh);
+    /* shadow */
+    --color-theme-shadow-primary: var(--color-light-theme-shadow-primary);
+    --table-shadow-left-primary: var(--color-light-table-shadow-left-primary);
+    --table-shadow-right-primary: var(--color-light-table-shadow-right-primary);
+}
+
+.theme-olet {
+    --color-theme-primary: var(--color-olet-theme-primary);
+}
+
+:root {
+    /* background */
+    --color-dark-theme-primary: #000;
+    --color-light-theme-primary: #fff;
+    --color-olet-theme-primary: #000;
+
+    --color-dark-theme-secondary: rgba(245, 245, 245);
+    --color-light-theme-secondary: rgba(245, 245, 245);
+    --color-olet-theme-secondary: rgba(245, 245, 245);
+
+    /* text */
+    --color-dark-theme-text-primary: #fff;
+    --color-light-theme-text-primary: #000;
+    --color-olet-theme-text-primary: #000;
+
+    /* border */
+    --color-light-theme-border-primary: rgba(229, 229, 229);
+    --color-dark-theme-border-primary: rgba(229, 229, 229);
+    --color-oled-theme-border-primary: rgba(229, 229, 229);
+
+    --color-light-theme-border-secondary: rgb(245, 245, 245);
+    --color-dark-theme-border-secondary: rgb(245, 245, 245);
+    --color-oled-theme-border-secondary: rgb(245, 245, 245);
+
+    --color-light-theme-border-highligh: rgb(212, 212, 212);
+    --color-dark-theme-border-highligh: rgb(212, 212, 212);
+    --color-oled-theme-border-highligh: rgb(212, 212, 212);
+
+    /* shadow */
+    --color-light-theme-shadow-primary: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+        0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    --color-dark-theme-shadow-primary: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+        0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    --color-olet-theme-shadow-primary: 0 6px 16px 0 rgba(0, 0, 0, 0.08),
+        0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    --color-light-table-shadow-left-primary: inset 10px 0 8px -8px rgba(5, 5, 5, 0.16);
+    --color-dark-table-shadow-left-primary: inset 10px 0 8px -8px rgba(5, 5, 5, 0.16);
+    --color-olet-table-shadow-left-primary: inset 10px 0 8px -8px rgba(5, 5, 5, 0.16);
+    --color-light-table-shadow-right-primary: inset -10px 0 8px -8px
+        rgba(5, 5, 5, 0.06);
+    --color-dark-table-shadow-right-primary: inset -10px 0 8px -8px
+        rgba(5, 5, 5, 0.06);
+    --color-olet-table-shadow-right-primary: inset -10px 0 8px -8px
+        rgba(5, 5, 5, 0.06);
+
+    /* special */
+    /* dont using for theme */
+    --color-special-primary: rgba(63, 118, 255);
+    --color-special-secondary: rgba(63, 118, 255, 0.1);
+
+    /* dont using for theme */
+    --color-warning: #ffc53d;
+    --color-error: #d73a49;
+    --color-info: #1677ff;
+    --color-success: #52c41a;
+
+    /* modal color */
+    --color-modal-overlay: rgba(0, 0, 0, 0.45);
+
+    /* ======================================================= */
+    --width-menu: 270px;
+    --width-menu-collap: 70px;
+}
